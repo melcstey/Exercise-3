@@ -1,0 +1,149 @@
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    min-height: 100%;
+}
+
+#Bats {
+    animation-name: move;
+    animation-duration: 6s;
+    transition-timing-function: ease-in-out;
+}
+
+#Ghost {
+    animation: bounce 1s linear infinite;
+}
+
+#Zombies {
+    animation-name: walking;
+    animation-duration: 5s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    
+    35% {
+        transform: translateY(-10px);
+    }
+    
+    60% {
+        transform: translateX(-5px);
+    }
+    
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes move {
+    0% {transform: rotate(0deg)}
+    
+    100% {
+        transform: rotate(-359deg)
+    }
+}
+
+@keyframes walking {
+     0% {
+        transform: translateY(0);
+    }
+    
+    20% {
+        transform: translateY(-30px);
+    }
+    
+    40% {
+        transform: translateX(20px);
+    }
+    
+    60% {
+        transform: translateX(-10px);
+    }
+    
+    80% {
+        transform: translateY(-20px);
+    }
+    
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*SVG COLOURS*/
+.cls-1 {
+        fill: #162e4c;
+      }
+
+      .cls-2 {
+        fill: #555645;
+      }
+
+      .cls-3 {
+        fill: #3a2d1b;
+      }
+
+      .cls-10, .cls-4, .cls-8, .cls-9 {
+        fill: #484759;
+      }
+
+      .cls-5 {
+        fill: #020202;
+      }
+
+      .cls-6 {
+        fill: #0f0909;
+      }
+
+      .cls-7 {
+        fill: #0c0909;
+      }
+
+      .cls-8 {
+        stroke: #070505;
+      }
+
+      .cls-10, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-9 {
+        stroke: #000;
+      }
+
+      .cls-10 {
+        stroke: #050404;
+      }
+
+      .cls-11 {
+        fill: #191817;
+      }
+
+      .cls-12 {
+        fill: #560002;
+      }
+
+      .cls-13 {
+        fill: #afb22f;
+      }
+
+      .cls-14 {
+        fill: #f4f1df;
+      }
+
+      .cls-15 {
+        fill: #ddd;
+      }
+
+      .cls-16 {
+        fill: #080f11;
+      }
+
+      .cls-17 {
+        fill: #020a0c;
+      }
